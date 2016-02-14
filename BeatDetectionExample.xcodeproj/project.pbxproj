@@ -11,6 +11,10 @@
 		0F4CA38E1C706673003AAEF6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4CA38D1C706673003AAEF6 /* main.m */; };
 		0F4CA3901C706673003AAEF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F4CA38F1C706673003AAEF6 /* Assets.xcassets */; };
 		0F4CA3931C706673003AAEF6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F4CA3911C706673003AAEF6 /* MainMenu.xib */; };
+		0F4CA39C1C70668E003AAEF6 /* InputMonitorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4CA39B1C70668E003AAEF6 /* InputMonitorView.m */; };
+		0F4CA3A21C7067CA003AAEF6 /* Novocaine.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4CA39F1C7067CA003AAEF6 /* Novocaine.m */; };
+		0F4CA3A31C7067CA003AAEF6 /* RingBuffer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F4CA3A11C7067CA003AAEF6 /* RingBuffer.mm */; };
+		0F4CA3A61C7069FB003AAEF6 /* BeatDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4CA3A51C7069FB003AAEF6 /* BeatDetector.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +25,14 @@
 		0F4CA38F1C706673003AAEF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F4CA3921C706673003AAEF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		0F4CA3941C706673003AAEF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F4CA39A1C70668E003AAEF6 /* InputMonitorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputMonitorView.h; sourceTree = "<group>"; };
+		0F4CA39B1C70668E003AAEF6 /* InputMonitorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputMonitorView.m; sourceTree = "<group>"; };
+		0F4CA39E1C7067CA003AAEF6 /* Novocaine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Novocaine.h; path = Novocaine/Novocaine.h; sourceTree = "<group>"; };
+		0F4CA39F1C7067CA003AAEF6 /* Novocaine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Novocaine.m; path = Novocaine/Novocaine.m; sourceTree = "<group>"; };
+		0F4CA3A01C7067CA003AAEF6 /* RingBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RingBuffer.h; path = Novocaine/RingBuffer.h; sourceTree = "<group>"; };
+		0F4CA3A11C7067CA003AAEF6 /* RingBuffer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = RingBuffer.mm; path = Novocaine/RingBuffer.mm; sourceTree = "<group>"; };
+		0F4CA3A41C7069FB003AAEF6 /* BeatDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeatDetector.h; sourceTree = "<group>"; };
+		0F4CA3A51C7069FB003AAEF6 /* BeatDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeatDetector.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,12 +65,17 @@
 		0F4CA3881C706673003AAEF6 /* BeatDetectionExample */ = {
 			isa = PBXGroup;
 			children = (
+				0F4CA39D1C7067A6003AAEF6 /* Novocaine */,
 				0F4CA3891C706673003AAEF6 /* AppDelegate.h */,
 				0F4CA38A1C706673003AAEF6 /* AppDelegate.m */,
 				0F4CA38F1C706673003AAEF6 /* Assets.xcassets */,
 				0F4CA3911C706673003AAEF6 /* MainMenu.xib */,
 				0F4CA3941C706673003AAEF6 /* Info.plist */,
 				0F4CA38C1C706673003AAEF6 /* Supporting Files */,
+				0F4CA39A1C70668E003AAEF6 /* InputMonitorView.h */,
+				0F4CA39B1C70668E003AAEF6 /* InputMonitorView.m */,
+				0F4CA3A41C7069FB003AAEF6 /* BeatDetector.h */,
+				0F4CA3A51C7069FB003AAEF6 /* BeatDetector.m */,
 			);
 			path = BeatDetectionExample;
 			sourceTree = "<group>";
@@ -69,6 +86,17 @@
 				0F4CA38D1C706673003AAEF6 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0F4CA39D1C7067A6003AAEF6 /* Novocaine */ = {
+			isa = PBXGroup;
+			children = (
+				0F4CA39E1C7067CA003AAEF6 /* Novocaine.h */,
+				0F4CA39F1C7067CA003AAEF6 /* Novocaine.m */,
+				0F4CA3A01C7067CA003AAEF6 /* RingBuffer.h */,
+				0F4CA3A11C7067CA003AAEF6 /* RingBuffer.mm */,
+			);
+			name = Novocaine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F4CA3A31C7067CA003AAEF6 /* RingBuffer.mm in Sources */,
+				0F4CA3A21C7067CA003AAEF6 /* Novocaine.m in Sources */,
 				0F4CA38E1C706673003AAEF6 /* main.m in Sources */,
+				0F4CA3A61C7069FB003AAEF6 /* BeatDetector.m in Sources */,
+				0F4CA39C1C70668E003AAEF6 /* InputMonitorView.m in Sources */,
 				0F4CA38B1C706673003AAEF6 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

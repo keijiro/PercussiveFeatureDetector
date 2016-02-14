@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  InputMonitorView.h
 //  BeatDetectionExample
 //
 //  Created by Keijiro Takahashi on 2/14/16.
@@ -8,7 +8,6 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+@interface InputMonitorView : NSView
 
 @end
-
