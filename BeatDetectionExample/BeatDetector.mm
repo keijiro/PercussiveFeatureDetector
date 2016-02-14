@@ -26,7 +26,7 @@ static const int kFrameSize = 512;
 - (void)awakeFromNib
 {
     _ringBuffer = new RingBuffer(kFrameSize * 4, 1);
-    _onset = new OnsetDetectionFunction(kFrameSize, kFrameSize * 2, 6, 1);
+    _onset = new OnsetDetectionFunction(kFrameSize, kFrameSize * 2);
     _peak = new PeakProcessor();
 }
 

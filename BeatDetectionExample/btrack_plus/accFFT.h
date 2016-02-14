@@ -13,29 +13,30 @@
 
 typedef double fft_complex[2];
 
-class accFFT {
+class accFFT
+{
 public:
-    accFFT(int fft_size,int type);       // constructor
-    ~accFFT();                  // destructor
-    void forward_FFT_f(float *buffer,float *real,float *imag); // forward fft (float)
-    void forward_FFT_d(double *buffer,fft_complex *out); // forward fft (double)
     
-
+    accFFT(int fft_size,int type);
+    ~accFFT();
+    
+    void forward_FFT_f(float *buffer,float *real,float *imag);
+    void forward_FFT_d(double *buffer,fft_complex *out);
     
 private:
-    size_t              fftSize;
-    size_t              fftSizeOver2;
-    size_t              log2n;
-    size_t              log2nOver2;
-    size_t               i;                  
     
-    FFTSetup            fftSetup;
-    FFTSetupD           fftSetupD;
-    COMPLEX_SPLIT       split;
+    size_t fftSize;
+    size_t fftSizeOver2;
+    size_t log2n;
+    size_t log2nOver2;
+    size_t i;
+    
+    FFTSetup fftSetup;
+    FFTSetupD fftSetupD;
+    COMPLEX_SPLIT split;
     DOUBLE_COMPLEX_SPLIT d_split;
     
-    int                  fft_type;
-    
+    int fft_type;
 };
 
 #endif

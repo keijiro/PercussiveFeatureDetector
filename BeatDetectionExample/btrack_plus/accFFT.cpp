@@ -7,8 +7,6 @@
 //
 
 #include "accFFT.h"
-#include <stdlib.h>
-
 
 accFFT :: accFFT(int fft_size,int type)
 {
@@ -41,9 +39,6 @@ accFFT :: accFFT(int fft_size,int type)
             //printf("FFT Setup failed\n");
         }
     }
-        
-    
-    
 }
 
 accFFT :: ~accFFT()
@@ -60,8 +55,6 @@ accFFT :: ~accFFT()
         free(d_split.imagp);
         vDSP_destroy_fftsetupD(fftSetupD);
     }
-    
-    
 }
 
 void accFFT :: forward_FFT_f(float *buffer,float *real,float *imag)
@@ -101,8 +94,6 @@ void accFFT :: forward_FFT_f(float *buffer,float *real,float *imag)
         imag[i] = split.imagp[i];
     }
 }
-
-
 
 void accFFT :: forward_FFT_d(double *buffer,fft_complex *out)
 {        

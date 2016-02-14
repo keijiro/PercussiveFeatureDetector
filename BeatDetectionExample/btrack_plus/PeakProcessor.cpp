@@ -8,7 +8,7 @@
  */
 
 #include "PeakProcessor.h"
-#include "math.h"
+#include <math.h>
 
 PeakProcessor::PeakProcessor(){
 	
@@ -16,7 +16,7 @@ PeakProcessor::PeakProcessor(){
 	recentDFonsetFound.assign(vectorSize, false);
 	recentDFslopeValues.assign(vectorSize, 0.0);
 	
-	numberOfDetectionValuesToTest = 10;
+    numberOfDetectionValuesToTest = 10;
 	currentFrame = 0;
 	cutoffForRepeatOnsetsFrames = 4;
 	detectionTriggerRatio = 0.5f;

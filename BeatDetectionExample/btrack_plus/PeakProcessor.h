@@ -12,28 +12,30 @@
 
 #include <vector>
 
-class PeakProcessor{
-	public:
-	
+class PeakProcessor
+{
+public:
+    
 	PeakProcessor();
 	~PeakProcessor();
-	//peak processing requires
-	static const int vectorSize = 512/6; 
+    bool peakProcessing(const double& newDFval);
+    
+private:
+    
+    static const int vectorSize = 512/6;
 	std::vector<double> recentDFsamples;
 	std::vector<bool> recentDFonsetFound;
 	std::vector<double> recentDFslopeValues;
-	
+    
 	int numberOfDetectionValuesToTest;
-	bool peakProcessing(const double& newDFval);
-	double getBestSlopeValue(const float& dfvalue);
+    int currentFrame, lastSlopeOnsetFrame, cutoffForRepeatOnsetsFrames;
+    float detectionTriggerThreshold, detectionTriggerRatio;
+    float bestSlopeMedian, thresholdRelativeToMedian;
+    bool newOnsetFound, slopeFallenBelowMedian;
+    
+    double getBestSlopeValue(const float& dfvalue);
 	bool checkForSlopeOnset(const float& bestValue);
-	int currentFrame, lastSlopeOnsetFrame, cutoffForRepeatOnsetsFrames;
-	void updateDetectionTriggerThreshold(const float& val);
-	float detectionTriggerThreshold, detectionTriggerRatio;
-	float bestSlopeMedian, thresholdRelativeToMedian;
-	bool newOnsetFound, slopeFallenBelowMedian;
-	
-
-	
+    void updateDetectionTriggerThreshold(const float& val);
 };
+
 #endif
