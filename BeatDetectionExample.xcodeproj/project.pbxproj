@@ -15,9 +15,6 @@
 		0F4CA3A21C7067CA003AAEF6 /* Novocaine.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4CA39F1C7067CA003AAEF6 /* Novocaine.m */; };
 		0F4CA3A31C7067CA003AAEF6 /* RingBuffer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F4CA3A11C7067CA003AAEF6 /* RingBuffer.mm */; };
 		0F4CA3A61C7069FB003AAEF6 /* BeatDetector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F4CA3A51C7069FB003AAEF6 /* BeatDetector.mm */; };
-		0F4CA3AE1C7074C4003AAEF6 /* accFFT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0F4CA3A81C7074C4003AAEF6 /* accFFT.cpp */; };
-		0F4CA3B01C7074C4003AAEF6 /* OnsetDetectionFunction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0F4CA3AC1C7074C4003AAEF6 /* OnsetDetectionFunction.cpp */; };
-		0F4CA3B31C707673003AAEF6 /* PeakProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0F4CA3B11C707673003AAEF6 /* PeakProcessor.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,12 +33,6 @@
 		0F4CA3A11C7067CA003AAEF6 /* RingBuffer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = RingBuffer.mm; path = Novocaine/RingBuffer.mm; sourceTree = "<group>"; };
 		0F4CA3A41C7069FB003AAEF6 /* BeatDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeatDetector.h; sourceTree = "<group>"; };
 		0F4CA3A51C7069FB003AAEF6 /* BeatDetector.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BeatDetector.mm; sourceTree = "<group>"; };
-		0F4CA3A81C7074C4003AAEF6 /* accFFT.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = accFFT.cpp; path = btrack_plus/accFFT.cpp; sourceTree = "<group>"; };
-		0F4CA3A91C7074C4003AAEF6 /* accFFT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = accFFT.h; path = btrack_plus/accFFT.h; sourceTree = "<group>"; };
-		0F4CA3AC1C7074C4003AAEF6 /* OnsetDetectionFunction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OnsetDetectionFunction.cpp; path = btrack_plus/OnsetDetectionFunction.cpp; sourceTree = "<group>"; };
-		0F4CA3AD1C7074C4003AAEF6 /* OnsetDetectionFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OnsetDetectionFunction.h; path = btrack_plus/OnsetDetectionFunction.h; sourceTree = "<group>"; };
-		0F4CA3B11C707673003AAEF6 /* PeakProcessor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PeakProcessor.cpp; path = btrack_plus/PeakProcessor.cpp; sourceTree = "<group>"; };
-		0F4CA3B21C707673003AAEF6 /* PeakProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PeakProcessor.h; path = btrack_plus/PeakProcessor.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +65,6 @@
 		0F4CA3881C706673003AAEF6 /* BeatDetectionExample */ = {
 			isa = PBXGroup;
 			children = (
-				0F4CA3A71C7074B6003AAEF6 /* BTrack */,
 				0F4CA39D1C7067A6003AAEF6 /* Novocaine */,
 				0F4CA3891C706673003AAEF6 /* AppDelegate.h */,
 				0F4CA38A1C706673003AAEF6 /* AppDelegate.m */,
@@ -107,19 +97,6 @@
 				0F4CA3A11C7067CA003AAEF6 /* RingBuffer.mm */,
 			);
 			name = Novocaine;
-			sourceTree = "<group>";
-		};
-		0F4CA3A71C7074B6003AAEF6 /* BTrack */ = {
-			isa = PBXGroup;
-			children = (
-				0F4CA3B11C707673003AAEF6 /* PeakProcessor.cpp */,
-				0F4CA3B21C707673003AAEF6 /* PeakProcessor.h */,
-				0F4CA3A81C7074C4003AAEF6 /* accFFT.cpp */,
-				0F4CA3A91C7074C4003AAEF6 /* accFFT.h */,
-				0F4CA3AC1C7074C4003AAEF6 /* OnsetDetectionFunction.cpp */,
-				0F4CA3AD1C7074C4003AAEF6 /* OnsetDetectionFunction.h */,
-			);
-			name = BTrack;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,10 +171,7 @@
 				0F4CA3A31C7067CA003AAEF6 /* RingBuffer.mm in Sources */,
 				0F4CA3A21C7067CA003AAEF6 /* Novocaine.m in Sources */,
 				0F4CA38E1C706673003AAEF6 /* main.m in Sources */,
-				0F4CA3AE1C7074C4003AAEF6 /* accFFT.cpp in Sources */,
-				0F4CA3B31C707673003AAEF6 /* PeakProcessor.cpp in Sources */,
 				0F4CA3A61C7069FB003AAEF6 /* BeatDetector.mm in Sources */,
-				0F4CA3B01C7074C4003AAEF6 /* OnsetDetectionFunction.cpp in Sources */,
 				0F4CA39C1C70668E003AAEF6 /* InputMonitorView.m in Sources */,
 				0F4CA38B1C706673003AAEF6 /* AppDelegate.m in Sources */,
 			);
@@ -339,6 +313,7 @@
 				0F4CA3991C706673003AAEF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

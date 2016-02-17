@@ -11,7 +11,6 @@
 @interface BeatDetector : NSObject
 
 - (void)processInputData:(float *)data frames:(UInt32)frames channels:(UInt32)channels;
-
-@property (readonly) float level;
+- (float)getLevelOfBand:(int)band;
 
 @end
