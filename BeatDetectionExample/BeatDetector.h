@@ -13,4 +13,6 @@
 - (void)processInputData:(float *)data frames:(UInt32)frames channels:(UInt32)channels;
 - (float)getLevelOfBand:(int)band;
 
+@property (readonly) int bandCount;
+
 @end

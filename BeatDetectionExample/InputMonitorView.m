@@ -35,43 +35,62 @@ static const int kHistory = 512;
 
 - (void)drawRect:(NSRect)dirtyRect
 {
-    [super drawRect:dirtyRect];
-
-    float energy = 0;
+    int bandCount = self.beatDetector.bandCount;
     
-    for (int i = 1; i < 1024; i++)
-        energy += fmaxf([self.beatDetector getLevelOfBand:i], 0.0f);
+    float totalEnergy = 0;
+    float bandLevels[bandCount];
+
+    for (int i = 0; i < bandCount; i++)
+    {
+        float lv = fmaxf([self.beatDetector getLevelOfBand:i], 0.0f);
+        totalEnergy += lv;
+        bandLevels[i] = lv;
+    }
+    
+    _history[_historyIndex] = totalEnergy;
     
     _historyIndex = (_historyIndex + 1) % kHistory;
-    _history[_historyIndex] = energy / 1024;
+
+    NSSize size = self.frame.size;
+    
+    [super drawRect:dirtyRect];
     
     [[NSColor whiteColor] setFill];
     NSRectFill(dirtyRect);
     
-    NSSize size = self.frame.size;
-    float barInterval = size.width / 256;
-    float barWidth = 0.5f * barInterval;
-
-    [[NSColor colorWithWhite:0.1f alpha:1.0f] setFill];
-
-    for (int i = 1; i < 256; i++) {
-        float x = (0.5f + i)  * barInterval;
-        float y = [self.beatDetector getLevelOfBand:i * 4] * size.height;
-        NSRectFill(NSMakeRect(x - 0.5f * barWidth, 0, barWidth, y));
+    {
+        NSBezierPath *path = [NSBezierPath bezierPath];
+        float xScale = size.width / bandCount;
+        
+        for (int i = 0; i < bandCount; i++)
+        {
+            float x = xScale * i;
+            float y = bandLevels[i] * size.height;
+            
+            if (i == 0)
+                [path moveToPoint:NSMakePoint(x, y)];
+            else
+                [path lineToPoint:NSMakePoint(x, y)];
+        }
+        
+        [[NSColor colorWithWhite:0.5f alpha:1.0f] setStroke];
+        path.lineWidth = 0.5f;
+        [path stroke];
     }
     
     {
         NSBezierPath *path = [NSBezierPath bezierPath];
         float xScale = size.width / kHistory;
         
-        for (int i = 0; i < kHistory; i++) {
+        for (int i = 0; i < kHistory; i++)
+        {
             float x = xScale * i;
-            float y = _history[i] * size.height * 100;
-            if (i == 0) {
+            float y = (_history[i] + 0.5f) * size.height;
+            
+            if (i == 0)
                 [path moveToPoint:NSMakePoint(x, y)];
-            } else {
+            else
                 [path lineToPoint:NSMakePoint(x, y)];
-            }
         }
         
         [[NSColor colorWithWhite:0.5f alpha:1.0f] setStroke];

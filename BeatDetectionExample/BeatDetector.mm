@@ -33,6 +33,11 @@ static const int kFrameSize = kFFTSize * 2;
     float *_window;
 }
 
+- (int)bandCount
+{
+    return kFFTSize;
+}
+
 - (float)getLevelOfBand:(int)band
 {
 //    return _history[_historyIndex][band] * kFFTSize;
