@@ -14,14 +14,11 @@
 		0F4CA39C1C70668E003AAEF6 /* InputMonitorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4CA39B1C70668E003AAEF6 /* InputMonitorView.m */; };
 		0F4CA3A21C7067CA003AAEF6 /* Novocaine.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4CA39F1C7067CA003AAEF6 /* Novocaine.m */; };
 		0F4CA3A31C7067CA003AAEF6 /* RingBuffer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F4CA3A11C7067CA003AAEF6 /* RingBuffer.mm */; };
-		0F4CA3A61C7069FB003AAEF6 /* BeatDetector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F4CA3A51C7069FB003AAEF6 /* BeatDetector.mm */; };
-		0F4CA3AE1C7074C4003AAEF6 /* accFFT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0F4CA3A81C7074C4003AAEF6 /* accFFT.cpp */; };
-		0F4CA3B01C7074C4003AAEF6 /* OnsetDetectionFunction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0F4CA3AC1C7074C4003AAEF6 /* OnsetDetectionFunction.cpp */; };
-		0F4CA3B31C707673003AAEF6 /* PeakProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0F4CA3B11C707673003AAEF6 /* PeakProcessor.cpp */; };
+		0F4CA3A61C7069FB003AAEF6 /* FeatureDetector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F4CA3A51C7069FB003AAEF6 /* FeatureDetector.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0F4CA3861C706673003AAEF6 /* BeatDetectionExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeatDetectionExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F4CA3861C706673003AAEF6 /* PercussiveFeatureDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PercussiveFeatureDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F4CA3891C706673003AAEF6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0F4CA38A1C706673003AAEF6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0F4CA38D1C706673003AAEF6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -34,14 +31,8 @@
 		0F4CA39F1C7067CA003AAEF6 /* Novocaine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Novocaine.m; path = Novocaine/Novocaine.m; sourceTree = "<group>"; };
 		0F4CA3A01C7067CA003AAEF6 /* RingBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RingBuffer.h; path = Novocaine/RingBuffer.h; sourceTree = "<group>"; };
 		0F4CA3A11C7067CA003AAEF6 /* RingBuffer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = RingBuffer.mm; path = Novocaine/RingBuffer.mm; sourceTree = "<group>"; };
-		0F4CA3A41C7069FB003AAEF6 /* BeatDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeatDetector.h; sourceTree = "<group>"; };
-		0F4CA3A51C7069FB003AAEF6 /* BeatDetector.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BeatDetector.mm; sourceTree = "<group>"; };
-		0F4CA3A81C7074C4003AAEF6 /* accFFT.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = accFFT.cpp; path = btrack_plus/accFFT.cpp; sourceTree = "<group>"; };
-		0F4CA3A91C7074C4003AAEF6 /* accFFT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = accFFT.h; path = btrack_plus/accFFT.h; sourceTree = "<group>"; };
-		0F4CA3AC1C7074C4003AAEF6 /* OnsetDetectionFunction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OnsetDetectionFunction.cpp; path = btrack_plus/OnsetDetectionFunction.cpp; sourceTree = "<group>"; };
-		0F4CA3AD1C7074C4003AAEF6 /* OnsetDetectionFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OnsetDetectionFunction.h; path = btrack_plus/OnsetDetectionFunction.h; sourceTree = "<group>"; };
-		0F4CA3B11C707673003AAEF6 /* PeakProcessor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PeakProcessor.cpp; path = btrack_plus/PeakProcessor.cpp; sourceTree = "<group>"; };
-		0F4CA3B21C707673003AAEF6 /* PeakProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PeakProcessor.h; path = btrack_plus/PeakProcessor.h; sourceTree = "<group>"; };
+		0F4CA3A41C7069FB003AAEF6 /* FeatureDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeatureDetector.h; sourceTree = "<group>"; };
+		0F4CA3A51C7069FB003AAEF6 /* FeatureDetector.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FeatureDetector.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +49,7 @@
 		0F4CA37D1C706673003AAEF6 = {
 			isa = PBXGroup;
 			children = (
-				0F4CA3881C706673003AAEF6 /* BeatDetectionExample */,
+				0F4CA3881C706673003AAEF6 /* PercussiveFeatureDetector */,
 				0F4CA3871C706673003AAEF6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,15 +57,14 @@
 		0F4CA3871C706673003AAEF6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0F4CA3861C706673003AAEF6 /* BeatDetectionExample.app */,
+				0F4CA3861C706673003AAEF6 /* PercussiveFeatureDetector.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0F4CA3881C706673003AAEF6 /* BeatDetectionExample */ = {
+		0F4CA3881C706673003AAEF6 /* PercussiveFeatureDetector */ = {
 			isa = PBXGroup;
 			children = (
-				0F4CA3A71C7074B6003AAEF6 /* BTrack */,
 				0F4CA39D1C7067A6003AAEF6 /* Novocaine */,
 				0F4CA3891C706673003AAEF6 /* AppDelegate.h */,
 				0F4CA38A1C706673003AAEF6 /* AppDelegate.m */,
@@ -84,10 +74,11 @@
 				0F4CA38C1C706673003AAEF6 /* Supporting Files */,
 				0F4CA39A1C70668E003AAEF6 /* InputMonitorView.h */,
 				0F4CA39B1C70668E003AAEF6 /* InputMonitorView.m */,
-				0F4CA3A41C7069FB003AAEF6 /* BeatDetector.h */,
-				0F4CA3A51C7069FB003AAEF6 /* BeatDetector.mm */,
+				0F4CA3A41C7069FB003AAEF6 /* FeatureDetector.h */,
+				0F4CA3A51C7069FB003AAEF6 /* FeatureDetector.mm */,
 			);
-			path = BeatDetectionExample;
+			name = PercussiveFeatureDetector;
+			path = PercussiveFeatureDetector;
 			sourceTree = "<group>";
 		};
 		0F4CA38C1C706673003AAEF6 /* Supporting Files */ = {
@@ -109,25 +100,12 @@
 			name = Novocaine;
 			sourceTree = "<group>";
 		};
-		0F4CA3A71C7074B6003AAEF6 /* BTrack */ = {
-			isa = PBXGroup;
-			children = (
-				0F4CA3B11C707673003AAEF6 /* PeakProcessor.cpp */,
-				0F4CA3B21C707673003AAEF6 /* PeakProcessor.h */,
-				0F4CA3A81C7074C4003AAEF6 /* accFFT.cpp */,
-				0F4CA3A91C7074C4003AAEF6 /* accFFT.h */,
-				0F4CA3AC1C7074C4003AAEF6 /* OnsetDetectionFunction.cpp */,
-				0F4CA3AD1C7074C4003AAEF6 /* OnsetDetectionFunction.h */,
-			);
-			name = BTrack;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0F4CA3851C706673003AAEF6 /* BeatDetectionExample */ = {
+		0F4CA3851C706673003AAEF6 /* PercussiveFeatureDetector */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0F4CA3971C706673003AAEF6 /* Build configuration list for PBXNativeTarget "BeatDetectionExample" */;
+			buildConfigurationList = 0F4CA3971C706673003AAEF6 /* Build configuration list for PBXNativeTarget "PercussiveFeatureDetector" */;
 			buildPhases = (
 				0F4CA3821C706673003AAEF6 /* Sources */,
 				0F4CA3831C706673003AAEF6 /* Frameworks */,
@@ -137,9 +115,9 @@
 			);
 			dependencies = (
 			);
-			name = BeatDetectionExample;
-			productName = BeatDetectionExample;
-			productReference = 0F4CA3861C706673003AAEF6 /* BeatDetectionExample.app */;
+			name = PercussiveFeatureDetector;
+			productName = PercussiveFeatureDetector;
+			productReference = 0F4CA3861C706673003AAEF6 /* PercussiveFeatureDetector.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -156,7 +134,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0F4CA3811C706673003AAEF6 /* Build configuration list for PBXProject "BeatDetectionExample" */;
+			buildConfigurationList = 0F4CA3811C706673003AAEF6 /* Build configuration list for PBXProject "PercussiveFeatureDetector" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -169,7 +147,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0F4CA3851C706673003AAEF6 /* BeatDetectionExample */,
+				0F4CA3851C706673003AAEF6 /* PercussiveFeatureDetector */,
 			);
 		};
 /* End PBXProject section */
@@ -194,10 +172,7 @@
 				0F4CA3A31C7067CA003AAEF6 /* RingBuffer.mm in Sources */,
 				0F4CA3A21C7067CA003AAEF6 /* Novocaine.m in Sources */,
 				0F4CA38E1C706673003AAEF6 /* main.m in Sources */,
-				0F4CA3AE1C7074C4003AAEF6 /* accFFT.cpp in Sources */,
-				0F4CA3B31C707673003AAEF6 /* PeakProcessor.cpp in Sources */,
-				0F4CA3A61C7069FB003AAEF6 /* BeatDetector.mm in Sources */,
-				0F4CA3B01C7074C4003AAEF6 /* OnsetDetectionFunction.cpp in Sources */,
+				0F4CA3A61C7069FB003AAEF6 /* FeatureDetector.mm in Sources */,
 				0F4CA39C1C70668E003AAEF6 /* InputMonitorView.m in Sources */,
 				0F4CA38B1C706673003AAEF6 /* AppDelegate.m in Sources */,
 			);
@@ -301,9 +276,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = BeatDetectionExample/Info.plist;
+				INFOPLIST_FILE = PercussiveFeatureDetector/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jp.radiumsoftware.BeatDetectionExample;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.radiumsoftware.PercussiveFeatureDetector;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -313,9 +288,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = BeatDetectionExample/Info.plist;
+				INFOPLIST_FILE = PercussiveFeatureDetector/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jp.radiumsoftware.BeatDetectionExample;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.radiumsoftware.PercussiveFeatureDetector;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -323,7 +298,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0F4CA3811C706673003AAEF6 /* Build configuration list for PBXProject "BeatDetectionExample" */ = {
+		0F4CA3811C706673003AAEF6 /* Build configuration list for PBXProject "PercussiveFeatureDetector" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0F4CA3951C706673003AAEF6 /* Debug */,
@@ -332,13 +307,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0F4CA3971C706673003AAEF6 /* Build configuration list for PBXNativeTarget "BeatDetectionExample" */ = {
+		0F4CA3971C706673003AAEF6 /* Build configuration list for PBXNativeTarget "PercussiveFeatureDetector" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0F4CA3981C706673003AAEF6 /* Debug */,
 				0F4CA3991C706673003AAEF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

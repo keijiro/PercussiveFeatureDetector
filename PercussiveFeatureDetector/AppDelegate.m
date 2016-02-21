@@ -1,18 +1,10 @@
-//
-//  AppDelegate.m
-//  BeatDetectionExample
-//
-//  Created by Keijiro Takahashi on 2/14/16.
-//  Copyright © 2016 Keijiro Takahashi. All rights reserved.
-//
-
 #import "AppDelegate.h"
 #import "Novocaine.h"
-#import "BeatDetector.h"
+#import "FeatureDetector.h"
 
 @interface AppDelegate ()
 @property (weak) IBOutlet NSWindow *window;
-@property (weak) IBOutlet BeatDetector *beatDetector;
+@property (weak) IBOutlet FeatureDetector *featureDetector;
 @end
 
 @implementation AppDelegate
@@ -22,7 +14,7 @@
     Novocaine *novocaine = [Novocaine audioManager];
     
     novocaine.inputBlock = ^(float *data, UInt32 numFrames, UInt32 numChannels) {
-        [self.beatDetector processInputData:data frames:numFrames channels:numChannels];
+        [self.featureDetector processInputData:data frames:numFrames channels:numChannels];
     };
     
     [novocaine play];
