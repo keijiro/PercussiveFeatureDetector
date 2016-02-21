@@ -14,7 +14,7 @@
 		0F4CA39C1C70668E003AAEF6 /* InputMonitorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4CA39B1C70668E003AAEF6 /* InputMonitorView.m */; };
 		0F4CA3A21C7067CA003AAEF6 /* Novocaine.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4CA39F1C7067CA003AAEF6 /* Novocaine.m */; };
 		0F4CA3A31C7067CA003AAEF6 /* RingBuffer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F4CA3A11C7067CA003AAEF6 /* RingBuffer.mm */; };
-		0F4CA3A61C7069FB003AAEF6 /* BeatDetector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F4CA3A51C7069FB003AAEF6 /* BeatDetector.mm */; };
+		0F4CA3A61C7069FB003AAEF6 /* FeatureDetector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F4CA3A51C7069FB003AAEF6 /* FeatureDetector.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,8 +31,8 @@
 		0F4CA39F1C7067CA003AAEF6 /* Novocaine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Novocaine.m; path = Novocaine/Novocaine.m; sourceTree = "<group>"; };
 		0F4CA3A01C7067CA003AAEF6 /* RingBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RingBuffer.h; path = Novocaine/RingBuffer.h; sourceTree = "<group>"; };
 		0F4CA3A11C7067CA003AAEF6 /* RingBuffer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = RingBuffer.mm; path = Novocaine/RingBuffer.mm; sourceTree = "<group>"; };
-		0F4CA3A41C7069FB003AAEF6 /* BeatDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeatDetector.h; sourceTree = "<group>"; };
-		0F4CA3A51C7069FB003AAEF6 /* BeatDetector.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BeatDetector.mm; sourceTree = "<group>"; };
+		0F4CA3A41C7069FB003AAEF6 /* FeatureDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeatureDetector.h; sourceTree = "<group>"; };
+		0F4CA3A51C7069FB003AAEF6 /* FeatureDetector.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FeatureDetector.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,8 +74,8 @@
 				0F4CA38C1C706673003AAEF6 /* Supporting Files */,
 				0F4CA39A1C70668E003AAEF6 /* InputMonitorView.h */,
 				0F4CA39B1C70668E003AAEF6 /* InputMonitorView.m */,
-				0F4CA3A41C7069FB003AAEF6 /* BeatDetector.h */,
-				0F4CA3A51C7069FB003AAEF6 /* BeatDetector.mm */,
+				0F4CA3A41C7069FB003AAEF6 /* FeatureDetector.h */,
+				0F4CA3A51C7069FB003AAEF6 /* FeatureDetector.mm */,
 			);
 			path = BeatDetectionExample;
 			sourceTree = "<group>";
@@ -171,7 +171,7 @@
 				0F4CA3A31C7067CA003AAEF6 /* RingBuffer.mm in Sources */,
 				0F4CA3A21C7067CA003AAEF6 /* Novocaine.m in Sources */,
 				0F4CA38E1C706673003AAEF6 /* main.m in Sources */,
-				0F4CA3A61C7069FB003AAEF6 /* BeatDetector.mm in Sources */,
+				0F4CA3A61C7069FB003AAEF6 /* FeatureDetector.mm in Sources */,
 				0F4CA39C1C70668E003AAEF6 /* InputMonitorView.m in Sources */,
 				0F4CA38B1C706673003AAEF6 /* AppDelegate.m in Sources */,
 			);
